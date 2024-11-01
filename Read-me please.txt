@@ -1,0 +1,51 @@
+1. Ustunlar o'rtasidagi bog'lanish: Ma'lumotlar yaxlitligini ta'minlash uchun ma'lumotlar
+bazasi jadvalidagi turli ustunlar o'rtasida bog'lanishlar o'rnatildi.
+
+2. Admin-paneldagi jadval ustunlarini o'zgartirish: Admin-paneldagi jadvallar ustunlari ma'lumotlarni
+yaxshiroq qabul qilish va ko'rsatish uchun yangilandi.
+
+3. Yangi validatsiyalar va xabarlar qo'shildi: Yaratish va yangilash jarayonlari uchun yangi validatsiya
+qoidalari va mos xatolik xabarlari qo'shildi.
+
+4. Переключатель (toggle-switch) qo'shildi: Elementlarning holatini qulay tarzda o'zgartirish uchun
+interfeysga переключатель qo'shildi.
+
+5. Foydalanuvchi sahifasining stili o'zgartirildi: Foydalanuvchi sahifasining shabloni yangilandi va
+ChatGPT tomonidan yaratilgan yangi shablon qo'llandi, bu ko'rinishni va foydalanish qulayligini
+yaxshilaydi.
+
+6. Kartochkalar stili o'zgartirildi: Kartochkalarning ko'rinish uslubi yangilandi, barcha kartochkalar
+to'g'ri ko'rinishi uchun tavsif matni uchun cheklov belgilandi.
+
+7. Yaratish va yangilash sahifalarining stili o'zgartirildi: Yaratish va yangilash elementlari sahifalari
+foydalanuvchi tajribasini yaxshilash uchun stilistik o'zgarishlarga uchradi.
+
+8. Kirish sahifasidagi ro'yxatdan o'tish tugmasining stili vaqtincha o'zgartirildi: Kirish sahifasidagi
+ro'yxatdan o'tish tugmasining stili vaqtincha yaxshiroq ko'rinishi va foydalanish qulayligi uchun
+o'zgartirildi.
+
+------------------------------------------------------Rus-----------------------------------------------
+
+1. Связь между столбцами: Настроены связи между различными столбцами таблицы базы данных для
+обеспечения целостности данных.
+
+2. Изменение столбцов таблицы админ-панели: В админ-панели обновлены столбцы таблиц для улучшения
+восприятия и представления данных.
+
+3. Новые валидации и сообщения для создания и обновления: Для процессов создания и обновления добавлены
+новые правила валидации и соответствующие сообщения об ошибках.
+
+4. Добавлен переключатель (toggle-switch): В интерфейс добавлен переключатель для удобного изменения
+состояния элементов.
+
+5. Изменение стиля страницы пользователя: Шаблон страницы пользователя изменен на новый, сгенерированный
+ChatGPT, что улучшило внешний вид и удобство использования.
+
+6. Изменение стиля карточек: Обновлен стиль отображения карточек, введен лимит на количество символов для
+описания, чтобы все карточки выглядели аккуратно.
+
+7. Изменение стиля страниц создания и обновления: Страницы для создания и обновления элементов претерпели
+изменения стиля для улучшения пользовательского опыта.
+
+8. Временное изменение стиля кнопки регистрации на странице входа: На странице входа была временно
+изменена стилизация кнопки регистрации для лучшей визуализации и удобства.

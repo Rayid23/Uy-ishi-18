@@ -32,7 +32,7 @@ class AuthController extends Controller
             if (Auth::user()->role == 'admin') {
                 return redirect()->route('category.index')->with('success', 'Siz registratsiyadan muvaffaqiyatli otdingiz!');
             } else {
-                return redirect()->route('poster')->with('success', "Hush kelibsiz!");
+                return redirect()->route('poster.index')->with('success', "Hush kelibsiz!");
             }
         }
 
@@ -49,7 +49,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('poster')->with('success', "Siz registratsiyadan muvaffaqiyatli otdingiz!");
+        return redirect()->route('poster.index')->with('success', "Siz registratsiyadan muvaffaqiyatli otdingiz!");
     }
 
     public function logout()

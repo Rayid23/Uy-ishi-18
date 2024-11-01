@@ -10,8 +10,13 @@ class UserController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::paginate(9);
 
-        return view('layouts.user', compact('posts'));
+        return view('User.main', compact('posts'));
+    }
+
+    public function show(Post $post)
+    {
+        return view('User.show', compact('post'));
     }
 }

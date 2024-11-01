@@ -23,13 +23,17 @@ class CategoryUpdateRequest extends FormRequest
     {
         return [
             'name' => 'max:255',
+            'tr' => 'sometimes|integer|min:0',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'name.max' => 'Maksimal 255 harf kiriting!'
+            'name.max' => 'Maksimal 255 harf kiriting!',
+            'tr.integer' => 'tartib raqam son bolishi kerak',
+            'tr.sometimes' => 'tartib raqam buttun son bo\'lishi kerak',
+            'tr.min' => 'tartib raqam 0 dan kotta bolishi kerak'
         ];
     }
 }

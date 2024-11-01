@@ -8,7 +8,7 @@
 
         <a class="btn btn-primary" href="{{route('category.create')}}">Create</a>
 
-        <table class="table table-bordered text-center mt-3">
+        <table class="table table-bordered-bd-danger text-center mt-3 table-danger">
 
             <thead>
             <tr>
@@ -16,6 +16,8 @@
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Post-count</th>
+                <th scope="col">Order</th>
+                <th scope="col">Active</th>
                 <th scope="col">Created</th>
                 <th scope="col">Updated</th>
                 <th scope="col">Options</th>
@@ -32,6 +34,19 @@
                     <td>{{$cat->id}}</td>
                     <td>{{$cat->name}}</td>
                     <td>{{$cat->posts->count()}}</td>
+                    <td>{{$cat->tr}}</td>
+                    <td>
+
+                        <form method="POST" action="{{ route('category.toggle', $cat->id) }}" id="toggleForm">
+                            @csrf
+                            <label class="toggle-switch">
+                                <input type="checkbox" name="toggle" id="toggleInput"
+                                       onchange="this.form.submit()" {{ $cat->status == 1 ? 'checked' : '' }}>
+                                <span class="slider"></span>
+                            </label>
+                        </form>
+
+                    </td>
                     <td>{{$cat->created_at}}</td>
                     <td>{{$cat->updated_at}}</td>
                     <td style="width: 180px">

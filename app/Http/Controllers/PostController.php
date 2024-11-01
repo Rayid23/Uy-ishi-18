@@ -19,7 +19,7 @@ class PostController extends Controller
                 return redirect()->route('posts.index');
             }
             else {
-                return redirect()->route('poster');
+                return redirect()->route('poster.index');
             }
         }
         else{

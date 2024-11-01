@@ -13,6 +13,8 @@
         type="image/x-icon"
     />
 
+    <link rel="stylesheet" href="{{asset('assets/css/toogle.css')}}">
+
     <!-- Fonts and icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="{{asset('assets/js/plugin/webfont/webfont.min.js')}}"></script>
@@ -813,5 +815,7 @@
         fillColor: "rgba(255, 165, 52, .14)",
     });
 </script>
+
+
 </body>
 </html>

@@ -14,6 +14,9 @@
                 <h4 class="text-center">{{$post->category->name}}</h4>
                 <hr>
                 <h5 class="card-title text-center">{{$post->title}}</h5>
+                <hr>
+                <p class="card-text fs-5" style="font-family: 'JetBrains Mono Medium'">{{$post->description}}.</p>
+                <hr>
                 <p class="card-text fs-5" style="font-family: 'JetBrains Mono Medium'">{{$post->content}}.</p>
             </div>
         </div>

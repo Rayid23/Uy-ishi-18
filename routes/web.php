@@ -19,6 +19,8 @@ Route::get('/category/{category}', [CategoryController::class, 'edit'])
     ->name('category.edit');
 Route::put('/category/{category}', [CategoryController::class, 'update'])
     ->name('category.update');
+Route::post('/category-toggle/{category}', [CategoryController::class, 'toggle'])
+    ->name('category.toggle');
 
 #Posts-Routes
 Route::get('/posts', [PostController::class, 'index'])
@@ -50,4 +52,6 @@ Route::get('/logout', [AuthController::class, 'logout'])
 
 #User Routes
 Route::get('/poster', [UserController::class, 'index'])
-    ->name('poster');
+    ->name('poster.index');
+Route::post('/poster-show/{post}', [UserController::class, 'show'])
+    ->name('poster.show');

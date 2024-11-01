@@ -13,15 +13,13 @@ class CategoryController extends Controller
 {
     public function __construct()
     {
-        if(Auth::check()){
-            if(Auth::user()->role == 'admin'){
+        if (Auth::check()) {
+            if (Auth::user()->role == 'admin') {
                 return redirect()->route('category.index');
+            } else {
+                return redirect()->route('poster.index');
             }
-            else{
-                return redirect()->route('poster');
-            }
-        }
-        else{
+        } else {
             return redirect('/login');
         }
     }
@@ -84,4 +82,19 @@ class CategoryController extends Controller
         return redirect()->route('category.index')
             ->with('action', ['Category Deleted Successfully!', 'danger']);
     }
+
+    public function toggle(Category $category)
+    {
+        if ($category->status == 1) {
+            $category->status = 0;
+            $category->update();
+        } else {
+            $category->status = 1;
+            $category->update();
+        }
+
+        return redirect()->route('category.index');
+    }
+
+
 }

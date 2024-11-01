@@ -23,6 +23,7 @@ class CategoryStoreRequest extends FormRequest
     {
         return [
             'name' => 'required|max:255',
+            'tr' => 'sometimes|integer|min:0',
         ];
     }
 
@@ -31,6 +32,9 @@ class CategoryStoreRequest extends FormRequest
         return [
             'name.required' => 'Bosh qolib ketdi',
             'name.max' => 'Judayam kop kiritvordiz, maksimum:255 dagacha kiriting!',
+            'tr.integer' => 'tr son bolishi kerak',
+            'tr.sometimes' => 'tartib raqam buttun son bo\'lishi kerak',
+            'tr.min' => 'tartib raqam 0 dan kotta bolishi kerak'
         ];
     }
 }
